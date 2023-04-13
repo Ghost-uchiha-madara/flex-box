@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.flex-container{
+    display: flex;
+    background: gray;
+
+    /*
+    flex-direction: column; */
+    /* justify - work in main space-  work like rows.*/
+   /* justify-content: space-evenly;
+
+    Align - move left to right - work like columns.
+    align-items: start;
+    
+    */
+    /* flex-wrap: wrap-reverse; - agar multiple container ha toh -window ka size chota karte jaye - container nicha line ma aata jayega.*/
+    /* comment shortcut - CTRL + / */
+     
+
+
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: antiquewhite;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* ORDER - KISI BHI TARAH SA ITEMS KA ORDER SET KAR SAKTE HA. */
+    /* flex-grow - use karta ha items ka size ko increse karne ka liye */
+    /* flex-shrink - items ka size ha usko reduce karna ka liye. */
+    /* flex - combination of flex-grow and flex-shrink. */
+    
+    .item:nth-of-type(1){
+
+    flex-grow: 1;
+    /* order: 3; */
+}
+.item:nth-of-type(2)
+{
+    flex-grow: 2;
+    /* order:1; */
+}
+.item:nth-of-type(3)
+{
+    /* order: 2; */
+    flex-grow: 1;
+}
